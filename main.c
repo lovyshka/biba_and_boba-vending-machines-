@@ -25,14 +25,19 @@ int main(){
             else{
                 state = S0;
                 change = params.curr_sum - 10;
-                params.curr_sum -= 10;
+                params.curr_sum = 0;
                 printf("---------------------------------------------------\n");
                 printf("Enough money for product\n");
                 printf("Your change is: %d\n", change);
                 printf("Going to the state: %d\n", state);
             }
         }
-        else if (inserted_coin == -1) flag = 0;
+        else if (inserted_coin == -1){ 
+            flag = 0;
+            change = params.curr_sum;
+            printf("---------------------------------------------------\n");
+            printf("Your change is: %d\n", change);
+        }
         else{
             printf("---------------------------------------------------\n");
             printf("Unkown coin, inser one more\n");
