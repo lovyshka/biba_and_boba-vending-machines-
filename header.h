@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ncurses.h>
 
 enum list_of_transitions{
     S0, // initial state
