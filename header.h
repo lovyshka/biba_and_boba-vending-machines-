@@ -21,3 +21,4 @@ struct curr_params_of_machine{
 void print_machine();
 void print_table(enum list_of_transitions state);
 void init_vales_of_machine(struct curr_params_of_machine * data);
+int get_next_state(int inserted_coin, enum list_of_transitions prev_state);
